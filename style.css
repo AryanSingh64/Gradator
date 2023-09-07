@@ -3,6 +3,7 @@
     text-transform: capitalize;
     margin: 0;
     padding: 0;
+    
 
 }
 body{
@@ -15,6 +16,7 @@ body{
 }
 
 .nav-cover{
+
     background: #363636;
     display: flex;
     color: white;
@@ -31,6 +33,7 @@ body{
     color: rgb(255, 152, 18);
     text-decoration: none;
     margin-right: 2vw;
+    white-space: nowrap;
 }
 
 main{
@@ -42,8 +45,10 @@ main{
 
 
 }
+
+
 main{
-    position: relative;
+    
 }
 
 .main-cover{
@@ -93,13 +98,13 @@ main{
 }
 
 #css-code{
-    background: #000;
-    bottom: 0;
+
+    bottom: 40px;
     position: absolute;
     color: white;
     width: 100%;
-    height: 5rem;
-    padding-top: 1rem;
+    background: #0000006b;
+
     text-align: center;
     align-items:normal;
     white-space: nowrap;
@@ -201,6 +206,7 @@ input::-webkit-inner-spin-button {
 .contain-box-one{
 
 }
+
 h1.headcover{
     text-align: center;
     width: 100%;
@@ -261,7 +267,7 @@ transform: translateY(-50%);
 .covershadow label{
     border-radius: 5px;
     backdrop-filter: blur(1rem);
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     padding: .6em;
     /*line-height:40px;*/
 
@@ -311,4 +317,79 @@ transform: translateY(-50%);
     border: 2px dotted yellow;
     color: white;
     padding: 10px 10px;
+}
+
+
+@media (max-width:643px) {
+    .nav-cover{
+
+
+
+
+        color: white;
+        align-items: center;
+        justify-content: space-between;
+        height: 3rem;
+        
+    }
+    .nav-cover .logo h1{
+        font-size: 1.3rem;
+        margin-left: 1rem;
+        text-align: left;
+    }
+    .links{
+        background: #fcfcfc;
+        line-height: 50px;
+        display: flex;
+        right: -50%;
+        top: 0;
+        z-index: 10;
+        padding: 20px;
+        flex-direction: column;
+        padding-top: 4rem;
+        position: absolute;
+        transition: all .4s ease;
+    }
+    .links a{
+        color: rgb(255, 152, 18);
+        text-decoration: none;
+        white-space: nowrap;
+    }
+    .slider{
+        display: block !important;
+        position: absolute;
+        top: 0;
+        
+        right: 0;
+        background: rgba(248, 183, 183, 0.918);
+        padding: 1rem 2rem;
+
+        
+        
+    }
+    .cut{
+        display: block !important;
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: white !important;
+        background: rgba(230, 86, 86, 0.918);
+        padding: .5rem 1rem;
+        border-radius: 0 0 25px 25px;
+    }
+
+
+    h1.headcover{
+        text-align: center;
+        width: 100%;
+        font-size:3vw;
+        position:absolute;
+        color: white;
+        background: #303030;
+        padding: 1rem;
+        letter-spacing: 1px;
+    }
+}
+.headcontain{
+    
 }

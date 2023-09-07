@@ -13,7 +13,7 @@ const boxcolor = document.querySelector('#boxcolor');
 const bgrange = document.querySelector('#bg-range');
 const info = document.querySelector('#imptxt');
 const info1 = document.querySelector('#imptxt2');
-
+const links = document.querySelector('.links');
 
 
 
@@ -108,3 +108,10 @@ spreadrange.addEventListener('input', () => {
 // Initial update
 updateShadow();
 
+function openSlider() {
+    links.style.right = '0';
+}
+
+function cutSlider(){
+    links.style.right='-50%' ;  
+}
