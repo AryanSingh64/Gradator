@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./logo.png"/>
+</head>
+<body class="body">
+
+
+    <div id="nav">
+        <div class="nav-cover">
+            <div class="logo">
+                <h1>Gradator</h1>
+            </div>
+            <div class="links">
+                    <a href="">Home</a>
+                    <a href="#pixtovw">px TO vh/vw</a>
+                    <a href="#classone">boxShadowGenerator</a>
+            </div>
+        </div>
+    </div>
+    <main class="main">
+        <div class="main-cover">
+
+            <label for="color1">Color1</label>
+            <input id="color1" value="#FEAEC9" data-jscolor="{}">
+            <input type="range" id="color1range" min="0" max="160" step="1" value="30">
+    
+            <label for="color2">Color2:</label>
+            <input id="color2" value="#99D9EA" data-jscolor="{}">
+            <input type="range" id="color2range" min="0" max="160" step="1" value="80">
+            
+            
+            <label for="angle">Angle:</label>
+            <input type="range" id="angle" min="0" max="360" step="1" value="45">
+
+
+            
+        </div>
+
+        <div class="gradient-text">
+            <div class="gradient" id="gradient"></div>
+            <p id="css-code">fds</p>
+        </div>
+
+    </main>
+    <hr>
+    <div class="pixtovw" id="pixtovw">
+        <h1>converter</h1>
+        <div class="pixeltovh">
+            <p>pixel to vh</p>
+            <input type="number" id="pxInput" value="0">
+            <p id="vhOutput" readonly></p>
+        </div>
+        <div class="pixeltovw">
+            <p>pixel to vw</p>
+            <input type="number" id="vwpxInput" value="0">
+            <p id="vwOutput" readonly></p>
+        </div>
+
+            <a href="#classone">↓</a>
+
+    </div>
+    <hr>
+
+
+
+
+    <div class="boxShadowGenerator" id="classone">
+        <h1 class="headcover">
+            Box Shadow Generator
+        </h1>
+        <div class="covershadow">
+            
+            <div class="coverall">
+            
+
+            <div class="contain-box-one">
+                <div class="one-box">
+                <label for="horizontal-box">
+                    Horizontal Length
+                </label>
+                <input type="number" id="horizontal-box" value="10">
+                <p>px</p>
+            </div>
+                <input type="range" id="horizontal-length" min="-200" max="200" value="10" step="1">
+            </div>
+
+            <div class="contain-box-two">
+                <div class="one-box">
+                <label for="vertical-box">
+                    vertical-Length:
+                </label>
+                <input type="number" id="vertical-box" value="10"><p>px</p>
+            </div>
+                <input type="range" id="vertical-length" min="-200" max="200" value="10" step="1">
+            </div>
+
+            <div class="contain-box-three">
+                <div class="one-box">
+                <label for="shadow-box">
+                    shadow-box:
+                </label>
+                <input type="number" id="shadow-num" value="10"><p>px</p>
+            </div>
+                <input type="range" id="shadow-range" min="-200" max="200" value="10" step="1">
+            </div>
+
+            <div class="contain-box-four">
+                <div class="one-box">
+                <label for="spread-Radius">
+                    shadow-radius:
+                </label>
+                <input type="number" id="spread-num" value="10"><p>px</p>
+                </div>
+                <input type="range" id="spread-range" min="-200" max="200" value="10" step="1">
+            </div>
+
+            <div class="contain-box-five">
+                <div class="two-box">
+                <label for="shadowcolor">
+                    shadowcolor:
+                </label>
+                <input id="shadow-col-num" value="#000" data-jscolor="{}">
+            </div>
+            </div>
+
+            <div class="contain-box-six">
+                <div class="two-box">
+                <label for="bgcolor">
+                    bgcolor:
+                </label>
+                <input id="bg-range" value="white" data-jscolor="{}">
+            </div>
+            </div>
+
+            <div class="contain-box-seven">
+                <div class="two-box">
+                <label for="boxcolor">
+                    boxcolor:
+                </label>
+                <input id="boxcolor" value="#FF5C5C" data-jscolor="{}">
+            </div>
+            </div>
+        </div>
+            <div class="box">
+                <div>
+                    <p id="imptxt"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="jscolor.js"></script>
+
+    <script src="script.js"></script>
+    <script src="boxShadow.js"></script>
+    <script>
+
+// These options apply to all color pickers on the page
+jscolor.presets.default = {
+	width: 201,
+	height: 81,
+	position: 'right',
+	previewPosition: 'right',
+	backgroundColor: '#f3f3f3',
+	borderColor: '#bbbbbb',
+	controlBorderColor: '#bbbbbb',
+	palette: [
+		'#000000', '#7d7d7d', '#870014', '#ec1c23', '#ff7e26',
+		'#fef100', '#22b14b', '#00a1e7', '#3f47cc', '#a349a4',
+		'#ffffff', '#c3c3c3', '#b87957', '#feaec9', '#ffc80d',
+		'#eee3af', '#b5e61d', '#99d9ea', '#7092be', '#c8bfe7',
+	],
+	paletteCols: 10,
+	hideOnPaletteClick: true,
+}
+    </script>
+</body>
+</html>
