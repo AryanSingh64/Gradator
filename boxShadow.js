@@ -1,5 +1,5 @@
-const box = document.querySelector('.box');
-const boxShadowGen = document.querySelector('.boxShadowGenerator');
+const box = document.querySelector(".boxshadow-cover");
+const boxShadowGen = document.querySelector("#Box-Shadow");
 const horbox = document.querySelector('#horizontal-box');
 const verbox = document.querySelector('#horizontal-length');
 const verhorbox = document.querySelector('#vertical-box');
@@ -11,8 +11,9 @@ const spreadrange = document.querySelector('#spread-range');
 const shadowcolnum = document.querySelector('#shadow-col-num');
 const boxcolor = document.querySelector('#boxcolor');
 const bgrange = document.querySelector('#bg-range');
-const info = document.querySelector('#imptxt');
-const info1 = document.querySelector('#imptxt2');
+const info = document.querySelector(".info-shadow");
+const info2 = document.querySelector(".info-shadow2");
+/*const info1 = document.querySelector('#imptxt2');*/
 const links = document.querySelector('.links');
 
 
@@ -38,6 +39,8 @@ function updateShadow() {
 
     info.textContent = `box-shadow:${boxShadow};`;
     info.style.textTransform = 'lowercase';
+    info2.textContent = `background:${bgCol};`;
+    info2.style.textTransform = "lowercase";
     box.style.boxShadow = boxShadow;
     box.style.backgroundColor = boxcol;
     boxShadowGen.style.backgroundColor = bgCol;
@@ -107,11 +110,11 @@ spreadrange.addEventListener('input', () => {
 
 // Initial update
 updateShadow();
-
+/*
 function openSlider() {
     links.style.right = '0';
 }
 
 function cutSlider(){
     links.style.right='-50%' ;  
-}
+}*/
