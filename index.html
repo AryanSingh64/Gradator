@@ -3,183 +3,383 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gradator</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" type="image/png" href="./logo.png"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleShadow.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
-<body class="body">
-
-
     <div id="nav">
-        <div class="nav-cover">
-            <div class="logo">
-                <h1>Gradator</h1>
+        <div class="nav-total">
+            <div class="nav-cover">
+                <h3>Gradator.github.io</h3>
             </div>
-            <div class="links">
-                    <a href="">Home</a>
-                    <a href="#pixtovw">px TO vh/vw</a>
-                    <a href="#classone">boxShadowGenerator</a>
-                    <a onclick="cutSlider()" style="display: none;" class="cut">cut</a>
-            </div>
-            <a style="display: none;" onclick="openSlider()" class="slider">Slider</a>
-                   
+            <span class="onelight">
+                generate linear gradient CSS code
+            </span>
         </div>
-    </div>
-    <main class="main">
-        <div class="main-cover">
-
-            <label for="color1">Color1</label>
-            <input id="color1" value="#FEAEC9" data-jscolor="{}">
-            <input type="range" id="color1range" min="0" max="160" step="1" value="30">
     
-            <label for="color2">Color2:</label>
-            <input id="color2" value="#99D9EA" data-jscolor="{}">
-            <input type="range" id="color2range" min="0" max="160" step="1" value="80">
+
+    <!--firstLinerar-->
+    <div id="linear-gradient">
+        <div class="linear-cover">
+
+            <div class="box-gradient">
+                <div class="one-cover">
+                <div class="tl"></div>
+                <div class="tr"></div>
+                <div class="bl"></div>
+                <div class="br"></div>
+                </div>
+                <div class="box-cover"></div>
+                </div>
+            </div>
+            
+            <div class="info-gradient">
+                <label for="color1">Primary Color:</label>
+                <input id="color1" value="#FEAEC9" data-jscolor="{}">
+
+                <label for="color2">Secondary Color:</label>
+                <input id="color2" value="#99D9EA" data-jscolor="{}">
+
+
+                <p>Primary Intensity:</p>
+                <input type="range" id="color1range" min="0" max="160" step="1" value="30">
+    
+            
+                <p>Secondary Intensity:</p>
+                <input type="range" id="color2range" min="0" max="160" step="1" value="80">
             
             
-            <label for="angle">Angle:</label>
-            <input type="range" id="angle" min="0" max="360" step="1" value="45">
+                <label for="angle">Angle:</label>
+                <input type="range" id="angle" min="0" max="360" step="1" value="45">
 
+                <p class="info">
 
+                </p>
             
-        </div>
+            </div>
 
-        <div class="gradient-text">
-            <div class="gradient" id="gradient"></div>
-            <p id="css-code">fds</p>
         </div>
-
-    </main>
-    <hr>
-    <div class="pixtovw" id="pixtovw">
-        <h1>converter</h1>
-        <div class="pixeltovh">
-            <p>pixel to vh</p>
-            <input type="number" id="pxInput" value="0">
-            <p id="vhOutput" readonly></p>
-        </div>
-        <div class="pixeltovw">
-            <p>pixel to vw</p>
-            <input type="number" id="vwpxInput" value="0">
-            <p id="vwOutput" readonly></p>
-        </div>
-
-            <a href="#classone">↓</a>
 
     </div>
-    <hr>
+</div>
+
+    <div id="Box-Shadow">
+        <div class="box-total">
+            <div class="box-cover">
+                <h3>Gradator.github.io</h3>
+            </div>
+            <span class="boxlight">
+                generate BoxShadow CSS code
+            </span>
+        </div>
 
 
 
+        <div id="shadow-gradient">
 
-    <div class="boxShadowGenerator" id="classone">
-        <h1 class="headcover">
-            Box Shadow Generator
-        </h1>
-        <div class="covershadow">
+
+            <div class="shadow-cover">
+                <div class="shadowbox-gradient">
+                    <div class="two-cover">
+                        <div class="tl"></div>
+                        <div class="tr"></div>
+                        <div class="bl"></div>
+                        <div class="br"></div>
+                    </div>
+                    <div class="boxshadow-cover"></div>
+                </div>
+            </div>
             
-            <div class="coverall">
-            
-
-            <div class="contain-box-one">
-                <div class="one-box">
-                <label for="horizontal-box">
-                    Horizontal Length
-                </label>
+            <div class="infoshadow-gradient">
+<div class="cover-s">
+                <div class="cover-s1">
+                <label for="color1">Color1</label>
                 <input type="number" id="horizontal-box" value="10">
-                <p>px</p>
-            </div>
+    
                 <input type="range" id="horizontal-length" min="-200" max="200" value="10" step="1">
-            </div>
 
-            <div class="contain-box-two">
-                <div class="one-box">
+        </div>        <!---->
+
+            <div class="cover-s2">
                 <label for="vertical-box">
                     vertical-Length:
                 </label>
-                <input type="number" id="vertical-box" value="10"><p>px</p>
-            </div>
+                <input type="number" id="vertical-box" value="10">
                 <input type="range" id="vertical-length" min="-200" max="200" value="10" step="1">
-            </div>
+        
+                </div><!---->
+</div>
 
-            <div class="contain-box-three">
-                <div class="one-box">
+<div class="cover-t">
+    <div class="cover-t1">
                 <label for="shadow-box">
                     shadow-box:
                 </label>
-                <input type="number" id="shadow-num" value="10"><p>px</p>
-            </div>
+                <input type="number" id="shadow-num" value="10">
                 <input type="range" id="shadow-range" min="-200" max="200" value="10" step="1">
-            </div>
-
-            <div class="contain-box-four">
-                <div class="one-box">
+    
+    </div>                 <!---->
+    <div class="cover-t2">
                 <label for="spread-Radius">
                     shadow-radius:
                 </label>
-                <input type="number" id="spread-num" value="10"><p>px</p>
-                </div>
+                <input type="number" tor id="spread-num" value="10">
                 <input type="range" id="spread-range" min="-200" max="200" value="10" step="1">
-            </div>
+            
+    </div>                  <!---->
+</div>
 
-            <div class="contain-box-five">
-                <div class="two-box">
                 <label for="shadowcolor">
                     shadowcolor:
                 </label>
-                <input id="shadow-col-num" value="#000" data-jscolor="{}">
-            </div>
-            </div>
+                <input id="shadow-col-num" value="#bebebe" data-jscolor="{}">
 
-            <div class="contain-box-six">
-                <div class="two-box">
+
                 <label for="bgcolor">
                     bgcolor:
                 </label>
-                <input id="bg-range" value="white" data-jscolor="{}">
-            </div>
-            </div>
+                <input id="bg-range" value="#e0e0e0" data-jscolor="{}">
 
-            <div class="contain-box-seven">
-                <div class="two-box">
+
                 <label for="boxcolor">
                     boxcolor:
                 </label>
-                <input id="boxcolor" value="#FF5C5C" data-jscolor="{}">
-            </div>
-            </div>
-        </div>
-            <div class="box">
-                <div>
-                    <p id="imptxt"></p>
-                </div>
+                <input id="boxcolor" value="#e0e0e0" data-jscolor="{}">
+
+
+
+
+                <p class="info-shadow">
+
+                </p>
+                <p class="info-shadow2">
+
+                </p>
+            
             </div>
         </div>
     </div>
-    <script src="jscolor.js"></script>
+        
 
-    <script src="script.js"></script>
-    <script src="boxShadow.js"></script>
+
+
+
+
+
+
+
+
+
+
+<!--nav buttons-->
+
+        <div class="bottom-buttons">
+            <div class="bottom-cover">
+                <button id="but1"><a href="#nav">CSS Gradient</a></button>
+                <button id="but2" ><a href="#Box-Shadow">CSS BoxShadow</a></button>
+                <button id="but3">Px to XConverter</button>
+                <button id="but4"><a href="#bbox">Bg Animations</a>
+                </button>
+            </div>
+        </div>
+
+
+        <div id="bganimations">
+            <div class="bubbles">
+                <span style="--i:11"></span>
+                <span style="--i:12"></span>
+                <span style="--i:24"></span>
+                <span style="--i:10"></span>
+                <span style="--i:16"></span>
+                <span style="--i:18"></span>
+                <span style="--i:13"></span>
+                <span style="--i:7"></span>
+                <span style="--i:20"></span>
+                <span style="--i:35"></span>
+                <span style="--i:12"></span>
+                <span style="--i:15"></span>
+                <span style="--i:18"></span>
+                <span style="--i:26"></span>
+                <span style="--i:12"></span>
+                <span style="--i:32"></span>
+                <span style="--i:28"></span>
+                <span style="--i:21"></span>
+                <span style="--i:10"></span>
+                <span style="--i:14"></span>
+                <span style="--i:16"></span>
+                <span style="--i:12"></span>
+                <span style="--i:21"></span>
+                <span style="--i:31"></span>
+                <span style="--i:17"></span>
+                <span style="--i:15"></span>
+                <span style="--i:11"></span>
+                <span style="--i:30"></span>
+                <span style="--i:24"></span>
+                <span style="--i:6"></span>
+                <span style="--i:24"></span>
+                <span style="--i:12"></span>
+                <span style="--i:16"></span>
+                <span style="--i:13"></span>
+            </div>
+
+
+            <div class="coverarrowuo">
+                    <div class="coverarrow">
+                        
+                    <span style="--i:11"></span>
+                <span style="--i:12"></span>
+                <span style="--i:24"></span>
+                <span style="--i:10"></span>
+                <span style="--i:16"></span>
+                <span style="--i:18"></span>
+                <span style="--i:13"></span>
+                <span style="--i:7"></span>
+                <span style="--i:20"></span>
+                <span style="--i:35"></span>
+                <span style="--i:12"></span>
+                <span style="--i:15"></span>
+                <span style="--i:18"></span>
+                <span style="--i:26"></span>
+                <span style="--i:12"></span>
+                <span style="--i:32"></span>
+                <span style="--i:28"></span>
+                <span style="--i:21"></span>
+                <span style="--i:10"></span>
+                <span style="--i:14"></span>
+                <span style="--i:16"></span>
+                <span style="--i:12"></span>
+                <span style="--i:21"></span>
+                <span style="--i:31"></span>
+                <span style="--i:17"></span>
+                <span style="--i:15"></span>
+                <span style="--i:11"></span>
+                <span style="--i:30"></span>
+                <span style="--i:24"></span>
+                <span style="--i:6"></span>
+                <span style="--i:24"></span>
+                <span style="--i:12"></span>
+                <span style="--i:16"></span>
+                <span style="--i:13"></span>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="bubble-box" id="bbox">
+                <div class="bubble-width-height">
+                    <label for="Width">Width</label>
+                    
+                    <input type="range" id="bubble-width" min="0" max="50" value="2" step="1">
+                    
+                    <label for="Height">Height</label>
+                    
+                    <input type="range" id="bubble-height" min="0" max="50" value="4" step="1">
+                </div>
+
+
+
+                <div class="bubble-br-anim">
+                    <label for="borderradius">borderradius</label>
+            
+                    <input type="range" id="bubble-radius" min="0" max="100" value="20" step="1">
+                
+                    <label for="animduration">animduration</label>
+             
+                    <input type="range" id="bubble-anim" min="0" max="200" value="120" step="1">
+                </div>
+
+                <div class="bubble-bg">
+                    <label for="bgblue">bgblue</label>
+          
+                    <input id="bubble-blue" value="#4fc3dc" data-jscolor="{}">
+          
+                    <label for="bgred">bgred</label>
+                      <input id="bubble-red" value="#ff2d75" data-jscolor="{}">
+                </div>
+                
+
+                <div class="bubble-boxshadow">
+                    <label for="boxshadowblue">boxshadowblue</label>
+                
+                    <input id="bubble-shadow-blue" value="#4fc3dc44" data-jscolor="{}">
+             
+                    <label for="boxshadowblue1">boxshadowblue1</label>
+           
+                    <input id="bubble-shadow-blue1" value="#4fc3dc" data-jscolor="{}">
+                    
+                    <label for="boxshadowred">boxshadowred</label>
+                    
+                    <input id="bubble-shadow-red" value="#ff2d7544" data-jscolor="{}">
+                    
+                    <label for="boxshadowred1">boxshadowred1</label>
+                    
+                    <input id="bubble-shadow-red1" value="#ff2d75" data-jscolor="{}">
+                    
+                    <label for="bg">bgColor</label>
+                    
+                    <input id="bubble-bg" value="#0c192c" data-jscolor="{}">
+                </div>
+
+                <button id="change">Change Modes</button>
+                
+
+                
+
+
+
+
+
+            </div>
+
+
+            
+        </div>
+
+
+
+    <script src="jscolor.js"></script>
     <script>
 
-// These options apply to all color pickers on the page
-jscolor.presets.default = {
-	width: 201,
-	height: 81,
-	position: 'right',
-	previewPosition: 'right',
-	backgroundColor: '#f3f3f3',
-	borderColor: '#bbbbbb',
-	controlBorderColor: '#bbbbbb',
-	palette: [
-		'#000000', '#7d7d7d', '#870014', '#ec1c23', '#ff7e26',
-		'#fef100', '#22b14b', '#00a1e7', '#3f47cc', '#a349a4',
-		'#ffffff', '#c3c3c3', '#b87957', '#feaec9', '#ffc80d',
-		'#eee3af', '#b5e61d', '#99d9ea', '#7092be', '#c8bfe7',
-	],
-	paletteCols: 10,
-	hideOnPaletteClick: true,
-}
-    </script>
+
+        jscolor.presets.default = {
+            width: 181,
+            height: 91,
+            position: 'right',
+            previewPosition: 'right',
+            backgroundColor: '#f3f3f3',
+            borderColor: '#bbbbbb',
+            controlBorderColor: '#bbbbbb',
+            palette: [
+                '#000000', '#7d7d7d', '#870014', '#ec1c23', '#ff7e26',
+                '#fef100', '#22b14b', '#00a1e7', '#3f47cc', '#a349a4',
+                '#ffffff', '#c3c3c3', '#b87957', '#feaec9', '#ffc80d',
+                '#eee3af', '#b5e61d', '#99d9ea', '#7092be', '#c8bfe7',
+            ],
+            paletteCols: 10,
+            hideOnPaletteClick: true,
+        }
+            </script>
+            <script src="bganim.js"></script>
+            <script src="boxShadow.js"></script>
+            <script src="script.js"></script>
 </body>
 </html>
