@@ -1,7 +1,10 @@
+const main = document.querySelector('#nav');
+const boxfill = document.querySelector('.box-cover');
+const infograd = document.querySelector(".info-gradient");
+const navcover = document.querySelector(".nav-total");
 
-const main = document.querySelector('.main');
 const gradientdiv = document.querySelector('#gradient');
-const csscode = document.querySelector('#css-code');
+const csscode = document.querySelector('.info');
 
 const pxtovh = document.querySelector('#pxInput');
 const vhOutput = document.querySelector('#vhOutput');
@@ -23,6 +26,14 @@ const color2 = document.querySelector('#color2').value;
 
 const gradientCSS = `linear-gradient(${slider}deg, ${color1} ${col1slider}%, ${color2} ${col2slider}%)`;
 
+    if (color1 === "#000000" || color2 === "#000000") {
+        navcover.style.color = "white";
+    } else {
+        navcover.style.color = "#001f3f";
+    }
+
+infograd.style.background = gradientCSS;
+boxfill.style.background = gradientCSS;
 main.style.background = gradientCSS;
 csscode.textContent = `background:${gradientCSS}`;
 }
@@ -38,7 +49,7 @@ color1.addEventListener('input', updateGradient);
 color2.addEventListener('input', updateGradient);
 
 updateGradient();
-
+/*
 
 function updateVhValue() {
     const pxValue = parseFloat(pxtovh.value);
@@ -68,4 +79,4 @@ function updateVwValue() {
 }
 pxtovw.addEventListener('input' , updateVwValue);
 
-updateVwValue();
+updateVwValue();*/
