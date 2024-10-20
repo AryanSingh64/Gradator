@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleShadow.css">
+    <link rel="stylesheet" href="pxconverter.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -65,7 +66,7 @@
 
     </div>
 </div>
-
+<!--second section-->
     <div id="Box-Shadow">
         <div class="box-total">
             <div class="box-cover">
@@ -165,6 +166,83 @@
         
 
 
+<!--Third section-->
+<div id="Box-Converter">
+    <div class="box-con">
+        <div class="box-cover">
+            <h3>Gradator.github.io</h3>
+        </div>
+        <span class="con-txt">
+            Loader 
+        </span>
+    </div>
+
+    <div id="Loader">
+        <div class="Loader-cover">
+
+            <div class="box-Loader">
+                <div class="one-cover">
+                    <div class="tl"></div>
+                    <div class="tr"></div>
+                    <div class="bl"></div>
+                    <div class="br"></div>
+                    <div class="co">
+                        <div id="load" class="loader"></div> 
+                    </div>
+                </div>
+                <div class="box-cover"></div>
+                </div>
+            </div>
+            <div class="coverinfo">
+                <div class="infoDown">
+                    <!-- <button class="dropbtn">
+                        dropDown
+                    </button> -->
+
+                    <!-- <div class="dropDown-content"> -->
+                        <div class="drop">
+                            <a  id="drop1"><img style="width: 100px;" src="/img/1.png" alt=""></a>
+                            <a  id="drop2"><img style="width: 100px;" src="/img/2.png" alt=""></a>
+                            <a  id="drop3"><img src="/img/3.png" alt=""></a>
+                            <a  id="drop4"><img src="/img/4.png" alt=""></a>
+                            <a  id="drop5"><img src="/img/5.png" alt=""></a>
+                            <a  id="drop6"><img src="/img/6.png" alt=""></a>
+                        </div>
+                    <!-- </div> -->
+                </div>
+                <div class="option-load">
+                    <label for="loader-color1">Primary Color:</label>
+                    <input id="loader-color1" value="#FEAEC9" data-jscolor="{}">
+
+<!-- <br> -->
+
+                    <label for="loader-color2">Secondary Color:</label>
+                    <input id="loader-color2" value="#99D9EA" data-jscolor="{}">
+
+
+
+                    <p>Primary speed:</p>
+                    <input type="range" id="color1range" min="0" max="160" step="1" value="30">
+
+                    <p>animation type</p>
+                    <div class="op-l-a">
+                        <a href="">ease</a>
+                        <a href="">linear</a>
+                        <a href="">ease-in</a>
+                        <a href="">ease-out</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+    
+</div>
+    
 
 
 
@@ -180,7 +258,7 @@
             <div class="bottom-cover">
                 <button id="but1"><a href="#nav">CSS Gradient</a></button>
                 <button id="but2" ><a href="#Box-Shadow">CSS BoxShadow</a></button>
-                <button id="but3">Px to XConverter</button>
+                <button id="but3"><a href="#Box-Converter">Loader</a></button>
                 <button id="but4"><a href="#bbox">Bg Animations</a>
                 </button>
             </div>
@@ -381,5 +459,6 @@
             <script src="bganim.js"></script>
             <script src="boxShadow.js"></script>
             <script src="script.js"></script>
+            <script src="loader.js"></script>
 </body>
 </html>
