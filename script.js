@@ -35,7 +35,7 @@ const gradientCSS = `linear-gradient(${slider}deg, ${color1} ${col1slider}%, ${c
 infograd.style.background = gradientCSS;
 boxfill.style.background = gradientCSS;
 main.style.background = gradientCSS;
-csscode.textContent = `background-image:${gradientCSS}
+csscode.textContent = `background-image:${gradientCSS};
             height: 100vh;
             background-size: cover;
             background-repeat: no-repeat;`;
