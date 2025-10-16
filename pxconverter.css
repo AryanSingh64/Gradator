@@ -1,0 +1,85 @@
+/* Loader Section Specific Styles */
+.infoDown {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 20px;
+}
+
+.drop {
+    margin: 0;
+}
+
+.loader-option.active {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-color: var(--primary-color);
+}
+
+#speed-value {
+    display: inline-block;
+    padding: 8px 12px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    font-weight: 600;
+    color: #333;
+    margin-left: 10px;
+}
+
+/* Loader 4 specific styles */
+.loader4 {
+    display: flex;
+    gap: 10px;
+}
+
+.loader4 span {
+    width: 15px;
+    height: 15px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    animation: bounce 1.4s infinite ease-in-out both;
+}
+
+.loader4 span:nth-child(1) {
+    animation-delay: -0.32s;
+}
+
+.loader4 span:nth-child(2) {
+    animation-delay: -0.16s;
+}
+
+/* Loader 5 specific styles */
+.loader5 {
+    display: flex;
+    gap: 10px;
+}
+
+.loader5 span {
+    width: 15px;
+    height: 15px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    animation: dot 1.4s infinite ease-in-out both;
+}
+
+.loader5 span:nth-child(1) {
+    animation-delay: -0.32s;
+}
+
+.loader5 span:nth-child(2) {
+    animation-delay: -0.16s;
+}
+
+/* Responsive loader adjustments */
+@media (max-width: 768px) {
+    .loader,
+    .loader2,
+    .loader3,
+    .loader6 {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .loader4,
+    .loader5 {
+        width: 70px;
+    }
+}

@@ -1,0 +1,43 @@
+/* Box Shadow Section Specific Styles */
+.shadow-cover {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover-s1,
+.cover-s2,
+.cover-t1,
+.cover-t2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.infoshadow-gradient label {
+    font-size: 0.95rem;
+}
+
+.infoshadow-gradient input[type="number"] {
+    margin-bottom: 10px;
+}
+
+/* Responsive adjustments for shadow section */
+@media (max-width: 768px) {
+    .cover-s,
+    .cover-t {
+        grid-template-columns: 1fr;
+    }
+    
+    .boxshadow-cover {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .boxshadow-cover {
+        width: 120px;
+        height: 120px;
+    }
+}

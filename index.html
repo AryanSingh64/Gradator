@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS Generator - Create gradients, box shadows, loaders, and animations">
+    <title>CSS Generator - Gradator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hamburger Navigation -->
+    <div class="hamburger-menu" id="hamburger">
+        <div class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="nav-overlay" id="navOverlay">
+        <div class="nav-menu">
+            <button class="close-menu" id="closeMenu">&times;</button>
+            <h3>Gradator</h3>
+            <nav>
+                <a href="#nav" class="nav-link">Linear Gradient</a>
+                <a href="#Box-Shadow" class="nav-link">Box Shadow</a>
+                <a href="#Box-Converter" class="nav-link">Loader Generator</a>
+                <a href="#bganimations" class="nav-link">BG Animations</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div id="nav">
+        <div class="nav-total">
+            <div class="nav-cover">
+                <h3>Gradator</h3>
+                <p class="subtitle">CSS Code Generator</p>
+            </div>
+        </div>
+
+        <!-- Linear Gradient Section -->
+        <div id="linear-gradient">
+            <div class="linear-cover">
+                <div class="box-gradient">
+                    <div class="one-cover">
+                        <div class="tl"></div>
+                        <div class="tr"></div>
+                        <div class="bl"></div>
+                        <div class="br"></div>
+                    </div>
+                    <div class="box-cover"></div>
+                </div>
+            </div>
+            
+            <div class="info-gradient">
+                <h4 class="section-title">Linear Gradient</h4>
+                
+                <label for="color1">Primary Color:</label>
+                <input id="color1" value="#FEAEC9" data-jscolor="{}">
+
+                <label for="color2">Secondary Color:</label>
+                <input id="color2" value="#99D9EA" data-jscolor="{}">
+
+                <p>Primary Intensity:</p>
+                <input type="range" id="color1range" min="0" max="100" step="1" value="30">
+    
+                <p>Secondary Intensity:</p>
+                <input type="range" id="color2range" min="0" max="100" step="1" value="80">
+            
+                <label for="angle">Angle: <span id="angle-value">45°</span></label>
+                <input type="range" id="angle" min="0" max="360" step="1" value="45">
+
+                <p class="info"></p>
+                <button class="copy-btn" onclick="copyGradientCode()">Copy CSS</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Box Shadow Section -->
+    <div id="Box-Shadow">
+        <div class="box-total">
+            <h3>Gradator</h3>
+            <p class="subtitle">CSS Code Generator</p>
+        </div>
+
+        <div id="shadow-gradient">
+            <div class="shadow-cover">
+                <div class="shadowbox-gradient">
+                    <div class="two-cover">
+                        <div class="tl"></div>
+                        <div class="tr"></div>
+                        <div class="bl"></div>
+                        <div class="br"></div>
+                    </div>
+                    <div class="boxshadow-cover"></div>
+                </div>
+            </div>
+            
+            <div class="infoshadow-gradient">
+                <h4 class="section-title">Box Shadow</h4>
+                
+                <div class="cover-s">
+                    <div class="cover-s1">
+                        <label for="horizontal-box">Horizontal:</label>
+                        <input type="number" id="horizontal-box" value="10">
+                        <input type="range" id="horizontal-length" min="-200" max="200" value="10" step="1">
+                    </div>
+
+                    <div class="cover-s2">
+                        <label for="vertical-box">Vertical:</label>
+                        <input type="number" id="vertical-box" value="10">
+                        <input type="range" id="vertical-length" min="-200" max="200" value="10" step="1">
+                    </div>
+                </div>
+
+                <div class="cover-t">
+                    <div class="cover-t1">
+                        <label for="shadow-num">Blur:</label>
+                        <input type="number" id="shadow-num" value="10">
+                        <input type="range" id="shadow-range" min="0" max="200" value="10" step="1">
+                    </div>
+                    
+                    <div class="cover-t2">
+                        <label for="spread-num">Spread:</label>
+                        <input type="number" id="spread-num" value="10">
+                        <input type="range" id="spread-range" min="-200" max="200" value="10" step="1">
+                    </div>
+                </div>
+
+                <label for="shadow-col-num">Shadow Color:</label>
+                <input id="shadow-col-num" value="#bebebe" data-jscolor="{}">
+
+                <label for="bg-range">Background:</label>
+                <input id="bg-range" value="#e0e0e0" data-jscolor="{}">
+
+                <label for="boxcolor">Box Color:</label>
+                <input id="boxcolor" value="#e0e0e0" data-jscolor="{}">
+
+                <p class="info-shadow"></p>
+                <p class="info-shadow2"></p>
+                <button class="copy-btn" onclick="copyShadowCode()">Copy CSS</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loader Section -->
+    <div id="Box-Converter">
+        <div class="box-con">
+            <h3>Gradator</h3>
+            <p class="subtitle">CSS Code Generator</p>
+        </div>
+
+        <div id="Loader">
+            <div class="loader-main-grid">
+                <!-- Left: Preview -->
+                <div class="Loader-cover">
+                    <h4 class="section-title">Loader Preview</h4>
+                    <div class="box-Loader">
+                        <div class="one-cover">
+                            <div class="tl"></div>
+                            <div class="tr"></div>
+                            <div class="bl"></div>
+                            <div class="br"></div>
+                            <div class="co">
+                                <div id="load" class="loader"></div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Controls & Code -->
+                <div class="loader-controls-wrapper">
+                    <div class="loader-selection">
+                        <h4>Select Loader Type</h4>
+                        <div class="drop">
+                            <a id="drop1" class="loader-option active" data-loader="1">
+                                <div class="loader-preview loader-preview-1"></div>
+                                <span>Spinner 1</span>
+                            </a>
+                            <a id="drop2" class="loader-option" data-loader="2">
+                                <div class="loader-preview loader-preview-2"></div>
+                                <span>Spinner 2</span>
+                            </a>
+                            <a id="drop3" class="loader-option" data-loader="3">
+                                <div class="loader-preview loader-preview-3"></div>
+                                <span>Pulse</span>
+                            </a>
+                            <a id="drop4" class="loader-option" data-loader="4">
+                                <div class="loader-preview loader-preview-4"></div>
+                                <span>Bars</span>
+                            </a>
+                            <a id="drop5" class="loader-option" data-loader="5">
+                                <div class="loader-preview loader-preview-5"></div>
+                                <span>Dots</span>
+                            </a>
+                            <a id="drop6" class="loader-option" data-loader="6">
+                                <div class="loader-preview loader-preview-6"></div>
+                                <span>Ring</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="option-load">
+                        <h4>Customize Loader</h4>
+                        
+                        <label for="loader-color1">Primary Color:</label>
+                        <input id="loader-color1" value="#FEAEC9" data-jscolor="{}">
+
+                        <label for="loader-color2">Secondary Color:</label>
+                        <input id="loader-color2" value="#99D9EA" data-jscolor="{}">
+
+                        <label for="loader-size">Size (px):</label>
+                        <input type="range" id="loader-size" min="30" max="150" step="5" value="60">
+                        <span class="value-display" id="size-value">60px</span>
+
+                        <label for="loader-speed">Animation Speed (s):</label>
+                        <input type="range" id="loader-speed" min="0.5" max="5" step="0.1" value="2">
+                        <span class="value-display" id="speed-value">2s</span>
+
+                        <p>Animation Type:</p>
+                        <div class="op-l-a">
+                            <button class="anim-btn active" data-anim="linear">linear</button>
+                            <button class="anim-btn" data-anim="ease">ease</button>
+                            <button class="anim-btn" data-anim="ease-in">ease-in</button>
+                            <button class="anim-btn" data-anim="ease-out">ease-out</button>
+                        </div>
+                    </div>
+
+                    <div class="loader-code-section">
+                        <h4>HTML Code</h4>
+                        <div class="code-display" id="loader-html-code"></div>
+                        <button class="copy-btn" onclick="copyLoaderHTML()">Copy HTML</button>
+
+                        <h4>CSS Code</h4>
+                        <div class="code-display" id="loader-css-code"></div>
+                        <button class="copy-btn" onclick="copyLoaderCSS()">Copy CSS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Animations Section -->
+    <div id="bganimations">
+        <div class="bg-section-header">
+            <h3>Gradator</h3>
+            <p class="subtitle">CSS Code Generator</p>
+        </div>
+
+        <div class="bg-animation-container">
+            <!-- Left Side: Controls -->
+            <div class="bubble-box" id="bbox">
+                <h4>Background Animation</h4>
+                
+                <div class="bubble-controls">
+                    <label for="bubble-width">Width:</label>
+                    <input type="range" id="bubble-width" min="1" max="10" value="2" step="0.5">
+                    <span class="value-display">2vw</span>
+                    
+                    <label for="bubble-height">Height:</label>
+                    <input type="range" id="bubble-height" min="1" max="10" value="4" step="0.5">
+                    <span class="value-display">4vh</span>
+
+                    <label for="bubble-radius" class="radius-label">Border Radius:</label>
+                    <input type="range" id="bubble-radius" min="0" max="50" value="20" step="1">
+                    <span class="value-display">20vw</span>
+             
+                    <label for="bubble-anim">Duration (s):</label>
+                    <input type="range" id="bubble-anim" min="20" max="200" value="120" step="10">
+                    <span class="value-display">120s</span>
+
+                    <label for="bubble-blue">Primary Color:</label>
+                    <input id="bubble-blue" value="#4fc3dc" data-jscolor="{}">
+          
+                    <label for="bubble-red">Secondary Color:</label>
+                    <input id="bubble-red" value="#ff2d75" data-jscolor="{}">
+
+                    <label for="bubble-shadow-blue">Shadow Primary:</label>
+                    <input id="bubble-shadow-blue" value="#4fc3dc44" data-jscolor="{}">
+             
+                    <label for="bubble-shadow-blue1">Shadow Glow Primary:</label>
+                    <input id="bubble-shadow-blue1" value="#4fc3dc" data-jscolor="{}">
+                    
+                    <label for="bubble-shadow-red">Shadow Secondary:</label>
+                    <input id="bubble-shadow-red" value="#ff2d7544" data-jscolor="{}">
+                    
+                    <label for="bubble-shadow-red1">Shadow Glow Secondary:</label>
+                    <input id="bubble-shadow-red1" value="#ff2d75" data-jscolor="{}">
+                    
+                    <label for="bubble-bg">Background:</label>
+                    <input id="bubble-bg" value="#0c192c" data-jscolor="{}">
+
+                    <button id="change" class="mode-toggle">Switch to Triangles</button>
+                </div>
+
+                <!-- Code Output Section -->
+                <div class="bg-code-section">
+                    <h4>HTML Code</h4>
+                    <div class="code-display" id="bg-html-code"></div>
+                    <button class="copy-btn" onclick="copyBgHTML()">Copy HTML</button>
+
+                    <h4>CSS Code</h4>
+                    <div class="code-display" id="bg-css-code"></div>
+                    <button class="copy-btn" onclick="copyBgCSS()">Copy CSS</button>
+                </div>
+            </div>
+
+            <!-- Right Side: Live Animation Preview -->
+            <div class="bg-preview-panel">
+                <div class="preview-header">
+                    <h4>Live Preview</h4>
+                </div>
+                <div class="bg-preview-container">
+                    <!-- Bubbles Animation -->
+                    <div class="bubbles">
+                        <span style="--i:11"></span>
+                        <span style="--i:12"></span>
+                        <span style="--i:24"></span>
+                        <span style="--i:10"></span>
+                        <span style="--i:16"></span>
+                        <span style="--i:18"></span>
+                        <span style="--i:13"></span>
+                        <span style="--i:7"></span>
+                        <span style="--i:20"></span>
+                        <span style="--i:35"></span>
+                        <span style="--i:12"></span>
+                        <span style="--i:15"></span>
+                        <span style="--i:18"></span>
+                        <span style="--i:26"></span>
+                        <span style="--i:12"></span>
+                        <span style="--i:32"></span>
+                        <span style="--i:28"></span>
+                        <span style="--i:21"></span>
+                        <span style="--i:10"></span>
+                        <span style="--i:14"></span>
+                    </div>
+
+                    <!-- Triangles Animation -->
+                    <div class="coverarrowuo">
+                        <div class="coverarrow">
+                            <span style="--i:11"></span>
+                            <span style="--i:12"></span>
+                            <span style="--i:24"></span>
+                            <span style="--i:10"></span>
+                            <span style="--i:16"></span>
+                            <span style="--i:18"></span>
+                            <span style="--i:13"></span>
+                            <span style="--i:7"></span>
+                            <span style="--i:20"></span>
+                            <span style="--i:35"></span>
+                            <span style="--i:12"></span>
+                            <span style="--i:15"></span>
+                            <span style="--i:18"></span>
+                            <span style="--i:26"></span>
+                            <span style="--i:12"></span>
+                            <span style="--i:32"></span>
+                            <span style="--i:28"></span>
+                            <span style="--i:21"></span>
+                            <span style="--i:10"></span>
+                            <span style="--i:14"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="jscolor.js"></script>
+    <script>
+        jscolor.presets.default = {
+            width: 181,
+            height: 91,
+            position: 'right',
+            previewPosition: 'right',
+            backgroundColor: '#f3f3f3',
+            borderColor: '#bbbbbb',
+            controlBorderColor: '#bbbbbb',
+            palette: [
+                '#000000', '#7d7d7d', '#870014', '#ec1c23', '#ff7e26',
+                '#fef100', '#22b14b', '#00a1e7', '#3f47cc', '#a349a4',
+                '#ffffff', '#c3c3c3', '#b87957', '#feaec9', '#ffc80d',
+                '#eee3af', '#b5e61d', '#99d9ea', '#7092be', '#c8bfe7',
+            ],
+            paletteCols: 10,
+            hideOnPaletteClick: true,
+        }
+
+        // Hamburger Menu
+        const hamburger = document.getElementById('hamburger');
+        const navOverlay = document.getElementById('navOverlay');
+        const closeMenu = document.getElementById('closeMenu');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        hamburger.addEventListener('click', () => {
+            navOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+
+        closeMenu.addEventListener('click', () => {
+            navOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = link.getAttribute('href');
+                navOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+                document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+    <script src="script.js"></script>
+    <script src="boxShadow.js"></script>
+    <script src="loader.js"></script>
+    <script src="bganim.js"></script>
+</body>
+</html>
