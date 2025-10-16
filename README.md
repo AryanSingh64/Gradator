@@ -4,7 +4,7 @@ maybe in future
 
 Gradator is a versatile and developer-friendly tool designed to simplify various aspects of web development. It provides a seamless experience for generating linear gradients, creating box shadows, and converting pixel values to viewport height (vh) units. Whether you're a seasoned web developer or just getting started, Gradator will become an essential part of your toolkit.
 
-Here's the Demo: [https://warlord64.github.io/Gradator/](https://warlord64.github.io/Gradator/#Box-Converter)
+Here's the Demo: [https://warlord64.github.io/Gradator/](https://gradator.vercel.app/)
 
 Key Features:
 
