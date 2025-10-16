@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Box Shadow Section Specific Styles */
 .shadow-cover {
     width: 100%;
@@ -41,3 +42,414 @@
         height: 120px;
     }
 }
+=======
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f7f2f2;
+    border-radius: 20px;
+    padding: 10px;
+}
+::-webkit-scrollbar-corner {
+  background: #ff0000;
+}
+#shadow-gradient{
+    display: flex;
+    justify-content:space-around;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+.shadow-cover{
+    display: flex;
+    border-radius: 50px;
+
+
+    align-items: center;
+}
+
+
+.shadowbox-gradient{
+    height: 400px;
+    width: 400px;
+    display: flex;
+    border-radius: 25px;
+    
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+}
+.shadowbox-gradient .boxshadow-cover{
+    height: 250px;
+    width: 250px;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: rgb(190, 190, 190) 20px 20px 60px 0px, rgb(255, 255, 255) -20px -20px 60px 0px;
+}
+
+.infoshadow-gradient{
+    display: flex;
+    flex-direction: column;
+    height:425px;
+    width: 414px; 
+    border-radius: 25px;
+    padding: 1rem;
+    margin-top: 1rem;
+    color: #001f3f;
+    background: #e0e0e0;
+    box-shadow: rgb(190, 190, 190) 20px 20px 60px 0px, rgb(255, 255, 255) -20px -20px 60px 0px;
+}
+
+#shadow-col-num, #bg-range, #boxcolor{
+    padding: 5px;
+    border-radius: 25px;
+}
+
+p.info-shadow{
+    padding: 10px 0 10px 0;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 300;
+    background: #ffffff3d;
+    border: 2px solid #001f3f;
+    border-radius: 25px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    
+}
+p.info-shadow2{
+    padding: 10px 0 10px 0;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 300;
+    background: #ffffff3d;
+    border: 2px solid #001f3f;
+    border-radius: 25px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.cover-s{
+    display: flex;
+    justify-content: space-around;
+}
+.cover-t{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Slider styles */
+.infoshadow-gradient input[type="range"] {
+    height: .1vw;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: rgba(2, 25, 68, 0.308);
+    backdrop-filter: blur(1rem);
+    font-weight: 900;
+    padding: 1rem;
+    appearance: none;
+    
+    outline: none;
+}
+
+.infoshadow-gradient input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #303030;
+    border: 3px solid #2491da; 
+    border-radius: 50%; 
+    cursor: pointer;
+
+}
+.infoshadow-gradient label{
+    margin-top: 5px;
+}
+
+.infoshadow-gradient input[type="number"]{
+    border-radius: 25px;
+    display: flex;
+    padding-left: 10px;
+    margin-top: 3px;
+}
+
+.infoShadow-gradient #color1,#color2{
+    padding: 1rem;
+    height: .1vw;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.two-cover{
+    position: absolute;
+        height: 400px;
+    width: 400px;
+}
+.two-cover .tl{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(255, 196, 0);
+    height: 20px;
+    border: 2px solid black;
+    width: 20px;
+    border-radius: 0 0 25px 0;
+}
+.two-cover .tr{
+    top: 0;
+    right: 0;
+    position: absolute;
+    background: rgb(255, 196, 0);
+    height: 20px;
+    width: 20px;
+    border: 2px solid black;
+    border-radius: 0 0 0 25px;
+}
+.two-cover .bl{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background: rgb(255, 196, 0);
+    height: 20px;
+    width: 20px;
+    border: 2px solid black;
+    border-radius: 0 25px 0 0;
+}
+.two-cover .br{
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background: rgb(255, 196, 0);
+    height: 20px;
+    width: 20px;
+    border: 2px solid black;
+    border-radius: 25px 0 0 0;
+}
+.bottom-buttons{
+    position: fixed;
+    bottom: 0;
+    z-index: 12;
+    background: #ffffff70;
+    width: fit-content;
+
+    margin-left: 50%;
+    transform: translateX(-50%);
+    backdrop-filter: blur(1rem);
+    border-radius: 25px;
+    padding:10px;
+}
+.bottom-cover{
+    display: flex;
+
+    justify-content: space-around;
+}
+.bottom-buttons button{
+    padding: 1.5vw;
+    margin-left: 10px;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+.bottom-buttons a{
+    text-decoration: none;
+    color: black;
+}
+
+#Box-Shadow{
+    height: 100vh;
+    background: #d8d8d8;
+    text-align: center;
+}
+
+.box-total{
+    margin-bottom: 1rem;
+}
+.box-cover h3{
+    font-size: 32px;
+    text-align: center;
+    font-weight: 500;
+    padding-top: 1rem;
+    color: #001f3f;
+}
+
+.shadowflex{
+    display: flex;
+}
+
+
+
+#bganimations{
+    background: #0c192c;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.bubbles{
+    position: relative;
+    display: flex;
+    z-index: 1;
+}
+
+.bubbles span{
+    position: relative;
+
+    /*height width background margin box-shadow borderradius*/
+    width: 2.22vw;
+    height: 4.39vh;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+    0 0 50px #4fc3dc,
+    0 0 50px #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(130s / var(--i));
+
+}
+.bubbles span:nth-child(even)
+{
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0 50px #ff2d75,
+    0 0 100px #ff2d75;
+}
+
+@keyframes animate {
+    0%
+    {
+        transform: translateY(100vh) scale(0);
+    }
+    100%
+    {
+        transform: translateY(-10vh) scale(01);
+    }
+}
+
+.bubble-box{
+    background: #ffffff;
+    width: 15rem;
+    z-index: 11;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    padding: 2%;
+    transition: all .4s ease;
+    scroll-behavior: smooth;
+
+}
+.bubble-box *{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.bubble-box label{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+
+/* Slider styles */
+.bubble-box input[type="range"] {
+    height: .1vw;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: rgba(2, 25, 68, 0.308);
+    backdrop-filter: blur(1rem);
+    font-weight: 900;
+    padding: 1rem;
+    appearance: none;
+    
+    outline: none;
+}
+
+.bubblebox input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #303030;
+    border: 3px solid #2491da; 
+    border-radius: 50%; 
+    cursor: pointer;
+
+}
+
+
+
+.coverarrowuo{
+    background: #0c192c;
+    height: 100vh;
+
+    margin-top: -2rem;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.coverarrow{
+    position: relative;
+    display: flex;
+        z-index: -1;
+}
+
+.coverarrow span{
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent; /* Adjust the width of your triangle */
+  border-right: 50px solid transparent; /* Adjust the width of your triangle */
+  border-bottom: 100px solid #ff0000; /* Adjust the height and color of your triangle */
+  position: relative;
+
+filter: drop-shadow(0px 0px .75em #4444dd);
+  animation: trian 15s linear infinite;
+    animation-duration: calc(130s / var(--i));
+            }
+/*
+.coverarrow span::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: -1;   
+}*/
+
+.coverarrow span:nth-child(even)
+{
+    border-bottom: 100px solid #804e4e;
+
+
+filter: drop-shadow(0px 0px .75em #4444dd);
+}
+
+
+
+@keyframes trian {
+    0%
+    {
+        transform: translateY(100vh) scale(0);
+    }
+    100%
+    {
+        transform: translateY(-10vh) scale(01);
+    }
+}
+
+
+>>>>>>> 960a3ac4e900cece532e565a1629cc90bb749d96

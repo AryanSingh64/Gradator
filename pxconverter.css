@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Loader Section Specific Styles */
 .infoDown {
     background: white;
@@ -83,3 +84,340 @@
         width: 70px;
     }
 }
+=======
+#Box-Converter{
+    height: 100vh;
+    text-align: center;
+}
+/*
+.con-txt{
+    text-align: center;
+}
+
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropDown {
+    position: relative;
+    display: inline-block;
+
+} */
+#Loader{
+    display: flex;
+    justify-content:space-around;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.co {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.Loader-cover{
+    display: flex;
+    align-items: center;
+}
+
+.infoDown{
+  /* height: 400px;
+  width: 500px;
+  background: blue; */
+}
+.infoDown button{
+  background:red;
+  padding: 10px 20px;
+
+}
+
+.box-Loader{
+background: rgba(169, 169, 169, 0.286);
+height:400px;
+width: 400px;
+justify-content: center;
+align-items: center;
+}
+
+
+
+.dropDown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 
+        0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.coverinfo{
+  display: flex;
+  flex-direction: column;
+  height:fit-content;
+  width: 414px; 
+  border-radius: 25px;
+  padding: 1rem;
+  color: #001f3f;
+  background: #e0e0e0;
+  box-shadow: rgb(190, 190, 190) 20px 20px 60px 0px, rgb(255, 255, 255) -20px -20px 60px 0px;
+}
+
+.option-load{
+  display: flex;
+  flex-direction: column;
+}
+.op-l-a{
+  margin-top: 20px;
+}
+.op-l-a a{
+  padding: 10px 10px;
+  background: rgb(12, 137, 76);
+  color: white;
+  text-decoration: none;
+}
+.coverinfo #loader-color1,#loader-color2{
+  padding: 1rem;
+  height: .1vw;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+.dropDown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropDown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.infoDown:hover .dropDown-content {
+    display: block;
+}
+
+.infoDown:hover .dropbtn {
+    background-color: #b95d5dbd;
+    color: wheat;
+}
+
+
+
+
+
+/*loader*/
+.loader {/*color,color secondary,animation type,duration*/
+    display: inline-grid;
+    width: 80px;
+    aspect-ratio: 1;
+
+    background: 
+     conic-gradient(from 146deg at 50% 1%,#0000, #91492A 2deg 65deg,#0000 68deg)
+     -5% 100%/20% 27% repeat-x;
+    animation: l5-0 .5s linear infinite;
+  }
+  .loader:before {
+    content:"";
+    grid-area: 1/1;
+    margin: 12.5%;
+    animation: inherit;
+    animation-name: l5-1;
+    clip-path: polygon(100% 50%,78.19% 60.26%,88.3% 82.14%,65% 75.98%,58.68% 99.24%,44.79% 79.54%,25% 93.3%,27.02% 69.28%,3.02% 67.1%,20% 50%,3.02% 32.9%,27.02% 30.72%,25% 6.7%,44.79% 20.46%,58.68% 0.76%,65% 24.02%,88.3% 17.86%,78.19% 39.74%);
+    background: #CF6F46;
+  }
+  @keyframes l5-0 {to{background-position: 20% 100%}}
+  @keyframes l5-1 {to{rotate: -40deg}}
+
+
+
+  .loader2 {
+
+    /* display: none; */
+
+
+
+    width: calc(100px - 14px);
+    height: 50px;
+    border-radius: 50px;
+    background: 
+     radial-gradient(farthest-side,#0000 calc(100% - 15px),#ccc calc(100% - 14px) 99%,#0000) left,
+     radial-gradient(farthest-side,#0000 calc(100% - 15px),#ccc calc(100% - 14px) 99%,#0000) right;
+    background-size: calc(50% + 7px) 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    animation: l10-0 1s infinite linear;
+  }
+  .loader2:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    margin: auto; 
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #f03355;
+    transform-origin: -14px 50%;
+    animation: l10-1 0.5s infinite linear;
+  }
+  @keyframes l10-0 { 
+      0%,49.99% { transform:scaleX(1)}
+      50%,100% { transform:scaleX(-1)} 
+  }
+  @keyframes l10-1 { 
+      100% { transform:rotate(1turn)} 
+  }
+
+
+
+  .loader3 {
+
+    /* display: none; */
+
+
+    width: 65px;
+    aspect-ratio: 1;
+    position: relative;
+  }
+  .loader3:before,
+  .loader3:after {
+    content: "";
+    position: absolute;
+    border-radius: 50px;
+    box-shadow: 0 0 0 3px inset #fff;
+    animation: l4 2.5s infinite;
+  }
+  .loader3:after {
+    animation-delay: -1.25s;
+  }
+  @keyframes l4 {
+    0% {
+      inset: 0 35px 35px 0;
+    }
+    12.5% {
+      inset: 0 35px 0 0;
+    }
+    25% {
+      inset: 35px 35px 0 0;
+    }
+    37.5% {
+      inset: 35px 0 0 0;
+    }
+    50% {
+      inset: 35px 0 0 35px;
+    }
+    62.5% {
+      inset: 0 0 0 35px;
+    }
+    75% {
+      inset: 0 0 35px 35px;
+    }
+    87.5% {
+      inset: 0 0 35px 0;
+    }
+    100% {
+      inset: 0 35px 35px 0;
+    }
+  }
+
+
+
+
+
+
+  .loader4 {
+
+    /* display: none; */
+
+
+    width: 60px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    -webkit-mask:linear-gradient(0deg,#000 55%,#0000 0) bottom/100% 18.18%;
+    background:
+     linear-gradient(#f03355 0 0) bottom/100% 0% no-repeat
+     #ddd;
+    animation: l8 2s infinite steps(7);
+  }
+  @keyframes l8 {
+      100% {background-size:100% 115%}
+  }
+
+
+
+
+  .loader5 {
+
+
+
+
+    --s: 20px;
+    
+    --_d: calc(0.353*var(--s));
+    width: calc(var(--s) + var(--_d));
+    aspect-ratio: 1;
+    display: grid;
+  }
+  .loader5:before,
+  .loader5:after {
+
+    
+    /* display: none; */
+
+
+
+
+    content: "";
+    grid-area: 1/1;
+    clip-path: polygon(var(--_d) 0,100% 0,100% calc(100% - var(--_d)),calc(100% - var(--_d)) 100%,0 100%,0 var(--_d));
+    background:
+      conic-gradient(from -90deg at calc(100% - var(--_d)) var(--_d),
+       #fff 135deg,#666 0 270deg,#aaa 0);
+    animation: l6 2s infinite;
+  }
+  .loader5:after {
+    animation-delay:-1s;
+  }
+  @keyframes l6{
+    0%  {transform:translate(0,0)}
+    25% {transform:translate(30px,0)}
+    50% {transform:translate(30px,30px)}
+    75% {transform:translate(0,30px)}
+    100%{transform:translate(0,0)}
+  }
+
+
+
+
+
+  .loader6 {
+
+    /* display: none; */
+
+    width: 40px;
+    aspect-ratio: 1;
+    outline: 2px solid #fff;
+    background:
+      radial-gradient(farthest-side,#000 90%,#0000) 0 0/8px 8px no-repeat,
+      conic-gradient(from  90deg at 10px 10px,#0000 90deg,#fff 0),
+      conic-gradient(from -90deg at 30px 30px,#0000 90deg,#fff 0);
+    animation: l1 1.5s infinite;
+  }
+  @keyframes l1 {
+    0%   {background-position:0    0}
+    25%  {background-position:100% 0}
+    50%  {background-position:100% 100%}
+    75%  {background-position:0    100%}
+    100% {background-position:0     0}
+  }
+>>>>>>> 960a3ac4e900cece532e565a1629cc90bb749d96
